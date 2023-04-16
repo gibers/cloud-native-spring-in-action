@@ -14,9 +14,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/gibers/cloud-native-spring-in-action
+          uri: https://github.com/gibers/config-repo
           default-label: main
           timeout: 5
           clone-on-start: true
           force-pull: true
-          basedir: Chapter06/06-end/config-repo
