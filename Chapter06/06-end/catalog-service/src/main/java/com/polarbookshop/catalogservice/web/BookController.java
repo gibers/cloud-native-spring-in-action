@@ -2,6 +2,7 @@ package com.polarbookshop.catalogservice.web;
 
 import javax.validation.Valid;
 
+import com.polarbookshop.catalogservice.config.PolarProperties;
 import com.polarbookshop.catalogservice.domain.Book;
 import com.polarbookshop.catalogservice.domain.BookService;
 
@@ -21,14 +22,21 @@ import org.springframework.web.bind.annotation.RestController;
 public class BookController {
 
     private final BookService bookService;
+    private final PolarProperties polarProperties;
 
-    public BookController(BookService bookService) {
+    public BookController(BookService bookService, PolarProperties polarProperties) {
         this.bookService = bookService;
+        this.polarProperties = polarProperties;
     }
 
     @GetMapping
     public Iterable<Book> get() {
         return bookService.viewBookList();
+    }
+
+    @GetMapping(path = "/properties")
+    public String getProperties() {
+        return polarProperties.getGreeting();
     }
 
     @GetMapping("{isbn}")
