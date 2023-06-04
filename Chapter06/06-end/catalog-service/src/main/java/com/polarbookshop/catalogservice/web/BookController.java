@@ -34,7 +34,7 @@ public class BookController {
         return bookService.viewBookList();
     }
 
-    @GetMapping("/properties")
+    @GetMapping("/properties1")
     public String getProperties() {
         return polarProperties.getGreeting();
     }
