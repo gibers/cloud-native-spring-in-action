@@ -71,7 +71,7 @@ jobs:
       matrix:
         project: [
           Chapter06/06-end/catalog-service,
-          Chapter06/06-end/config-service,
+#          Chapter06/06-end/config-service,
         ]
     steps:
       - name: Checkout source code
