@@ -108,6 +108,13 @@ jobs:
       contents: read
       packages: write
       security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [
+          Chapter06/06-end/catalog-service,
+          #          Chapter03/03-end/catalog-service,
+        ]
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
