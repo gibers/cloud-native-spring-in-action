@@ -40,7 +40,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: gradle
-      - name: Build, unit tests and integration tests {{matrix.project}}
+      - name: Build, unit tests and integration tests ${{matrix.project}}
         run: |
           cd ${{ matrix.project }}
           chmod +x gradlew
