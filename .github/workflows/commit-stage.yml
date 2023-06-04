@@ -29,7 +29,7 @@ jobs:
 #          Chapter05/05-end/catalog-service-jpa,
 #          Chapter05/05-end/config-service,
           Chapter06/06-end/catalog-service,
-          Chapter06/06-end/config-service,
+#          Chapter06/06-end/config-service,
 #          Chapter07/07-end/catalog-service,
 #          Chapter07/07-end/config-service,
 #          Chapter08/08-end/catalog-service,
